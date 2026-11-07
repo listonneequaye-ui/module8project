@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Hidden Star</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game">
+        <h1>Star Game</h1>
+        <h2>⭐ Find the Secret Star!</h2>
+        <p>Choose a box and see if you can find the star.</p>
+
+        <div class="boxes">
+            <button onclick="checkBox(0)">❓</button>
+            <button onclick="checkBox(1)">❓</button>
+            <button onclick="checkBox(2)">❓</button>
+        </div>
+
+        <h2 id="message">Good luck!</h2>
+
+        <button class="reset" onclick="resetGame()">Play Again</button>
+    </div>
+
+    <script src="apps.js"></script>
+</body>
+</html>
