@@ -1,3 +1,5 @@
+
+
 let hiddenStar = Math.floor(Math.random() * 3);
 
 function checkBox(number) {
@@ -8,9 +10,9 @@ function checkBox(number) {
         boxes[number].innerHTML = "⭐";
         message.innerHTML = "Congratulations! You found the Secret Star!";
         message.style.color = "green";
-    } else {
+} else {
         boxes[number].innerHTML = "❌";
-        message.innerHTML = "Oops! Try again.";
+        message.innerHTML = "Oops! Hahahahahahah... Try again.";
         message.style.color = "red";
     }
 
@@ -20,12 +22,11 @@ function checkBox(number) {
 function resetGame() {
     hiddenStar = Math.floor(Math.random() * 3);
 
-    let boxes = document.querySelectorAll(".boxes button");
+let boxes = document.querySelectorAll(".boxes button");
 
     boxes.forEach(box => {
         box.innerHTML = "❓";
         box.disabled = false;
-    });
+});
 
-    document.getElementById("message").innerHTML = "Good luck!";
-}
+    document.getElementById("message").innerHTML = "Good Luck!";}
